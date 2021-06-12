@@ -345,7 +345,6 @@ header .navbar .nav-links ul li a {
   }
 }
 /************************ section-1 *********************/
-
 .section-1 .container {
   padding: 70px 15px;
 }
@@ -354,15 +353,17 @@ header .navbar .nav-links ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .section-1-content > div {
   width: calc(70% / 3);
   border: 1px solid var(--color-2);
   margin: 15px;
-  padding: 20px;
+  padding: 30px 20px 25px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  position: relative;
 }
 
 .section-1-content > div:hover {
@@ -371,7 +372,7 @@ header .navbar .nav-links ul li a {
   color: #fff;
 }
 
-.section-1-content > div:hover a{
+.section-1-content > div:hover a {
   color: var(--color-1);
 }
 
@@ -379,6 +380,23 @@ header .navbar .nav-links ul li a {
   width: 50%;
 }
 
+.section-1 .container span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -7%;
+  right: 5%;
+  background-color: var(--color-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+
+.section-1 .container .section-1-content > div:hover span {
+  background-color: var(--color-1);
+}
 
 @media (max-width: 768px) {
   .section-1-content > div {
@@ -400,8 +418,8 @@ header .navbar .nav-links ul li a {
 
 .section-1-content a {
   color: var(--color-3);
-   
 }
+
 
 /*************************** section-2 ****************************/
 
