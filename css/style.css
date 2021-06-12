@@ -82,6 +82,11 @@ header .navbar h1 {
   margin: 0;
 }
 
+
+header .navbar a{
+  color:#FFF;
+}
+
 header .navbar h1 span {
   font-size: 50px;
   color: var(--color-2);
